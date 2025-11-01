@@ -19,7 +19,7 @@ func startServer() {
 
 	addr := fmt.Sprintf("[%s]:%s", ip, port)
 
-	fs := http.FileServer(http.Dir("./public"))
+	fs := http.FileServer(http.Dir("./client"))
 
 	http.Handle("/", fs)
 
